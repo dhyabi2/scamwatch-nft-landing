@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ArrowRight, Shield, ListChecks, ShoppingBag } from "lucide-react";
 
 const Index = () => {
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
     const observerOptions = {
@@ -126,17 +126,13 @@ const Index = () => {
                 Be the first to access our revolutionary marketplace for verified scam reports
               </p>
             </div>
-            <div className="max-w-md mx-auto">
-              <div className="flex gap-4">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="bg-zinc-800/50 border-zinc-700 rounded-full px-6"
-                />
-                <Button className="bg-white text-black hover:bg-zinc-200 rounded-full px-6">
-                  Join Waitlist
-                </Button>
-              </div>
+            <div className="flex justify-center">
+              <Button
+                className="bg-white text-black hover:bg-zinc-200 transition-all duration-300 rounded-full px-8 py-6 text-lg group"
+              >
+                Explore Features
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </div>
           </div>
         </div>
