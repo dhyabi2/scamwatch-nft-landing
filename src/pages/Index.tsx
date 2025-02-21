@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,6 +49,20 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto">
             Transform scam reports into verifiable digital assets, creating a transparent and immutable record of fraudulent projects.
           </p>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+            <div className="p-6 rounded-2xl bg-zinc-800/20 backdrop-blur-sm border border-zinc-700/50 hover:border-zinc-600 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-2">Pioneer Scam Detection</h3>
+              <p className="text-zinc-400">
+                Become an early guardian by identifying and documenting scams before others. Your vigilance transforms into valuable digital assets.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-zinc-800/20 backdrop-blur-sm border border-zinc-700/50 hover:border-zinc-600 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-2">Earn While Protecting</h3>
+              <p className="text-zinc-400">
+                Join our mission to purify the market. Be rewarded for your contribution in making the digital space safer for everyone.
+              </p>
+            </div>
+          </div>
           <Button
             className="bg-white text-black hover:bg-zinc-200 transition-all duration-300 rounded-full px-8 py-6 text-lg group"
           >
