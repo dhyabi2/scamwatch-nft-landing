@@ -1,7 +1,6 @@
-
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, ListChecks, ShoppingBag } from "lucide-react";
+import { ArrowRight, Shield, ListChecks, ShoppingBag, Trophy, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -138,9 +137,30 @@ const Index = () => {
                 Coming Soon
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">NFT Marketplace</h2>
-              <p className="text-zinc-400 text-xl max-w-2xl mx-auto">
+              <p className="text-zinc-400 text-xl max-w-2xl mx-auto mb-12">
                 Be the first to access our revolutionary marketplace for verified scam reports
               </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+                <div className="p-6 rounded-2xl bg-zinc-800/20 backdrop-blur-sm border border-zinc-700/50 hover:border-zinc-600 transition-all duration-300">
+                  <div className="bg-white/10 p-3 rounded-xl inline-block mb-4">
+                    <Trophy className="h-6 w-6 text-yellow-500" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Value by Verification</h3>
+                  <p className="text-zinc-400">
+                    The most thoroughly verified scam reports become the most valuable NFTs, rewarding vigilant contributors.
+                  </p>
+                </div>
+                <div className="p-6 rounded-2xl bg-zinc-800/20 backdrop-blur-sm border border-zinc-700/50 hover:border-zinc-600 transition-all duration-300">
+                  <div className="bg-white/10 p-3 rounded-xl inline-block mb-4">
+                    <TrendingUp className="h-6 w-6 text-green-500" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Reward System</h3>
+                  <p className="text-zinc-400">
+                    Early detection and comprehensive reporting lead to higher NFT values and greater rewards.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="flex justify-center">
               <Link to="/explore-features">
